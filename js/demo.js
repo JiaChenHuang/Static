@@ -1,18 +1,10 @@
 $(function(){
-/* 下载小米商城APP */
-    $('#down').hide();
-    $('#down-item').hover(function(){
-        $('#down').slideDown(300).stop(false,true);
-    },function(){
-        $('#down').slideUp(300).stop(false,true);
+    $('.flexslider').flexslider({
+        // 两秒钟自动切换
+        slideshowSpeed: 2500,
+        // 手动切换后继续轮播
+        pauseOnAction: false,
+        // 显示左右按钮
+        directionNav: false 
     });
-/* 下载小米商城APP end */
-/* 右边购物车 */
-    $('#cart-menu').hide();
-    $('#topbar-cart').hover(function(){
-        $('#cart-menu').slideDown(300).stop(false,true);
-    },function(){
-        $('#cart-menu').slideUp(300).stop(false,true);
-    });
-/* 右边购物车 end*/
 })

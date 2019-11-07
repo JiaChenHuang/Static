@@ -51,7 +51,6 @@
 }
 /* 向上三角形 end */
 .site-topbar .down{
-    /* width: 200px; */
     z-index: 1000;
     background-color: #fff;
     text-align: center;
@@ -373,3 +372,24 @@
 /* search部分 end*/
 /* 头部nav部分 end*/
 /* top部分 end */
+/* banner部分 */
+.banner{
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+}
+.banner .flexslider {
+    border: none;
+    height: 460px;
+    width: 1226px;
+    margin: 0;
+    border-radius: none;
+}
+.banner .flexslider .flex-control-nav {
+    z-index: 2;
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+
+}
+/* banner部分 end*/

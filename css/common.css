@@ -3,7 +3,7 @@ html,body{
     color: #333;
     background-color: #fff;
     min-width: 1226px;
-    max-width: 1903px;
+    /* max-width: 1903px; */
     /* width: 1903px; */
 }
 .left{
