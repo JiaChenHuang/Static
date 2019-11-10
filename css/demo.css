@@ -491,7 +491,6 @@
 .home-hero .item a{
     display: block;
     height: 170px;
-    /* vertical-align: top; */
 }
 .home-hero .item img{
     width: 316px;
@@ -499,6 +498,154 @@
 }
 /* left_btn */
 /* left_btn end*/
-
-
 /* host部分 end*/
+/* page-main部分 */
+.page-main{
+    max-width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 26px;
+
+}
+.page-main .box-hd .title{
+    font-size: 22px;
+    line-height: 58px;
+    color: #333;
+    font-weight: 200;
+    text-align: left;
+    height: 58px;
+    width: 1226px;
+    /* background-color: cyan; */
+}
+.page-main .box-bd{
+    position: relative;
+    height: 340px;
+    width: 1226px;
+    background-color: #f5f5f5;
+
+}
+.page-main .box-bd .box{
+    width: 234px;
+    height: 299px;
+    padding-top: 40px;
+    text-align: center;
+    border-top: 1px solid #e53935;
+    background-color: #f1eded;
+    line-height: 1.5;
+}
+.box-bd .box .round{
+    font-size: 21px;
+    color: #ef3a3b;
+    padding-top: 15px;
+}
+.box-bd .box .icon{
+    display: block;
+    font-size: 65px;
+    color: #ef3a3b;
+    margin: 17px 0 17px 40px;
+    line-height: 1;
+}
+.box-bd .box .desc{
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+.box-bd .box .countdown{
+    width: 168px;
+    margin: 28px auto 0;
+}
+.box-bd .box .countdown span{
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+    float: left;
+}
+.box-bd .box .countdown i{
+    width: 15px;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    color: #605751;
+    font-size: 28px;
+    font-style: normal;
+}
+.box-bd .swiper_box{
+    width: 978px;
+    height: 340px;
+    margin-left: 248px;
+    overflow: hidden;
+    position: relative;
+}
+.box-bd .swiper{
+    width: 2480px;
+    position: absolute;
+}
+.box-bd .swiper .item{
+    width: 234px;
+    text-align: center;
+    margin-right: 14px;
+    background-color: #fff;
+    line-height: 1.5;
+    border-top: 1px solid red;
+}
+.swiper .item a{
+    display: block;
+    height: 300px;
+    padding-top: 39px;
+    position: relative;
+}
+.swiper .item img{
+    width: 160px;
+    height: 160px;
+}
+.swiper .item .title{
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.swiper .item .desc{
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.swiper .item .price{
+    margin: 0;
+    color: #ff6709;
+    font-size: 14px;
+}
+.swiper .item .price del{
+    color: #b0b0b0;
+}
+
+.box-bd .flashsale-list{
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+.box-bd .flashsale-list span{
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+}
+.box-bd .flashsale-list span:hover{
+    color: #ff6709;
+}
