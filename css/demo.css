@@ -514,7 +514,6 @@
     text-align: left;
     height: 58px;
     width: 1226px;
-    /* background-color: cyan; */
 }
 .page-main .box-bd{
     position: relative;
@@ -649,3 +648,17 @@
 .box-bd .flashsale-list span:hover{
     color: #ff6709;
 }
+/* title_pic部分 */
+.page-main .title_pic{
+    display: block;
+    height: 120px;
+    margin: 22px 0;
+    overflow: hidden;
+}
+.home-brick-box{
+    
+}
+
+
+
+/* title_pic部分 end*/
