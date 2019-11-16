@@ -38,3 +38,40 @@ ul{
     transform: translate3d(0,-2px,0);
 }
 /* 鼠标移入动画 end*/
+.brick-item{
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 234px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.box-hd{
+    position: relative;
+}
+.box-hd>.more{
+    height: 58px;
+    position: absolute;
+    right: 0px;
+    top: 1px;
+}
+.box-hd>.more a{
+    font-size: 16px;
+    color: #424242;
+    vertical-align: top;
+    line-height: 58px;
+    transition: all .2s;
+}
+.box-hd>.more a:hover{
+    color: #ff6709;
+}
+.box-hd>.more i{
+    font-size: 21px;
+    vertical-align: -2.5px;
+}
+
+
