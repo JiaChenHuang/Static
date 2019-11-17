@@ -25,7 +25,7 @@
     /* vertical-align: top; */
 }
 .site-topbar .topbar-nav li:hover a,.site-topbar .topbar-info li:hover a{
-    color: #fff;
+    color: orangered;
 }
 .site-topbar .topbar-nav li{
     height: 40px;
@@ -205,7 +205,7 @@
     height: 100px;
 }
 /* logo部分 */
-.site-navbar .logo{
+.logo{
     position: absolute;
     width: 55px;
     height: 55px;
@@ -216,7 +216,7 @@
     overflow: hidden;
     margin-top: 22px;
 }
-.site-navbar .logo .icon{
+.logo .icon{
     width: 55px;
     height: 55px;
     color: #fff;
@@ -224,22 +224,22 @@
     font-size: 33px;
     vertical-align: top;
 }
-.site-navbar .logo .mi-logo{
+.logo .mi-logo{
     position: absolute;
     top: 0px;
     left: 0px;
     transition: left 150ms ease-in;
 }
-.site-navbar .logo .mi-home{
+.logo .mi-home{
     position: absolute;
     top: 0px;
     left: -55px;
     transition: left 150ms ease-in;
 }
-.site-navbar .logo:hover .mi-logo{
+.logo:hover .mi-logo{
     left: 55px;
 }
-.site-navbar .logo:hover .mi-home{
+.logo:hover .mi-home{
     left: 0px;
 }
 /* logo部分 :end */
@@ -886,9 +886,134 @@
     width: 100%;
     background-color: #fff;
 }
-
-
-
-
+.site-footer .footer-service{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.site-footer .list-service{
+    width: 1226px;
+}
+.site-footer .footer-service .list{
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 20%;
+    border-left: 1px solid #e0e0e0;
+}
+.site-footer .footer-service .list:first-child{
+    border-left: none;
+}
+.site-footer .footer-service .list a{
+    color: #616161;
+    transition: all .2s;
+}
+.site-footer .footer-service .list a:hover{
+    color: #ff6700;
+}
+.site-footer .footer-service .list a i{
+    font-size: 23px;
+    margin-right: 8px;
+    vertical-align: -2px;
+}
+.site-footer .footer-links{
+    padding: 40px 0;
+}
+.site-footer .footer-links .tab{
+    width: 960px;
+    text-align: left;
+}
+.site-footer .footer-links .tab tr{
+    height: 24px;
+    line-height: 24px;
+}
+.site-footer .footer-links .tab thead tr{
+    font-size: 14px;
+    height: 40px;
+    line-height: 14px;
+    color: #424242;
+    margin: 0 0 26px 0;
+}
+.site-footer .footer-links .tab a{
+    font-size: 12px;
+    color: #757575;
+    vertical-align: top;
+    transition: all .2s;
+}
+.site-footer .footer-links .tab a:hover{
+    color: #ff6700;
+}
+.site-footer .col-contact{
+    width: 251px;
+    height: 112px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+    color: #616161;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.site-footer .col-contact .phone{
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+    margin-bottom: 5px;
+}
+.site-footer .col-contact .time{
+    margin-bottom: 16px;
+}
+.site-footer .col-contact a{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    line-height: 24px;
+    font-size: 12px;
+    border: 1px solid #ff6700;
+    background: #fff;
+    color: #ff6700;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+.site-footer .col-contact a:hover{
+    color: #fff;
+    background-color: #ff6700;
+}
+.site-info {
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+.site-info .info-text,.site-info .info-links {
+    padding-left: 70px;
+    color: #b0b0b0;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.site-info .info-text .sites a{
+    color: #757575;
+    transition: all .1s;
+}
+.site-info .info-text a:hover{
+    color: #ff6700;
+}
+.site-info .info-text .sites .sep{
+    margin: 0 3px;
+}
+.site-info .info-text .text{
+    margin: 0;
+    line-height: 20px;
+}
+.site-info .info-links img{
+    width: auto;
+    height: 28px;
+    margin: 10px 0 15px 0;
+}
+.site-info .slogan {
+    text-align: center;
+    margin: 0 auto;
+    width: 267px;
+    height: 19px;
+    background: url(../img/slogan2016.png) no-repeat;
+    text-indent: -9999px;
+}
 /* footer部分 end*/
 
