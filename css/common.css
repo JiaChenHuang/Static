@@ -74,4 +74,16 @@ ul{
     vertical-align: -2.5px;
 }
 
+.a{
+    border-color: yellow !important;
+}
+.b{
+    border-color: blue !important;
+}
+.c{
+    border-color: chartreuse !important;
+}
+.d{
+    border-color: brown !important;
+}
 
