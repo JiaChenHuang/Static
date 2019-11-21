@@ -30,6 +30,9 @@ $(function(){
         todo(num);
     });
     // 鼠标移除自动开始轮播
+    $('.on_left,.on_right').mouseleave(function(){
+        clearInterval(mytimer);
+    });
     $('.on_left,.on_right').mouseout(function(){
         mytimer = setInterval(myanimate, 5000);
     });

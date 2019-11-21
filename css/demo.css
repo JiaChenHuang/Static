@@ -253,14 +253,14 @@
     float: left;
     position: relative;
 }
-.site-navbar .site-nav-item a{
+.site-navbar .site-nav-item>a{
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     color: #333;
     padding: 0 10px;
 }
-.site-navbar .site-nav-item a:hover{
+.site-navbar .site-nav-item>a:hover{
     color: #ff6700;
 }
 .site-navbar .site-category-list{
@@ -276,7 +276,7 @@
     padding: 20px 0;
     box-sizing: border-box;
 }
-.site-category-list .nav-title a{
+.site-category-list .nav-title>a{
     display: block;
     position: relative;
     padding-left: 30px;
@@ -285,20 +285,49 @@
     color: #fff!important;
     font-size: 14px;
 }
-.site-category-list .nav-title a:hover{
-    background-color: #ff6700;
-    /* HSLA（色调，饱和度，亮度，α），α是Alpha参数定义的不透明度 */
-    color: hsla(0,0%,100%,.5);
-    /* color: #fff; */
-}
-.site-category-list .nav-title a:hover .icon{
+.site-category-list .nav-title>a:hover .icon{
     color: hsla(0,0%,100%,.8);
 }
-.site-category-list .nav-title a .icon{
+.site-category-list .nav-title>a .icon{
     position: absolute;
     right: 20px;
     font-size: 16px;
 }
+.site-category-list .nav-title>a:hover{
+    background-color: #ff6700;
+    /* HSLA（色调，饱和度，亮度，α），α是Alpha参数定义的不透明度 */
+    color: hsla(0,0%,100%,.5);
+}
+/* 鼠标移入显示nav内容详情页 */
+.site-category-list .nav-title>a:hover+.nav-title-list{
+    display: block;
+}
+/* nav内容详情 */
+.nav-title-list {
+    display: none;
+    position: absolute;
+    left: 234px;
+    top: 0;
+    z-index: 24;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.18);
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+
+
+
+
+
+
+/* nav内容详情 end*/
+
+
+
+
+
 /* nav部分 end*/
 /* search部分 */
 .site-navbar .site-search{
