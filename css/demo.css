@@ -293,31 +293,71 @@
     right: 20px;
     font-size: 16px;
 }
-.site-category-list .nav-title>a:hover{
+.site-category-list .nav-title:hover>a{
     background-color: #ff6700;
-    /* HSLA（色调，饱和度，亮度，α），α是Alpha参数定义的不透明度 */
-    color: hsla(0,0%,100%,.5);
+    color: hsla(0,0%,100%,.5);/* HSLA（色调，饱和度，亮度，α），α是Alpha参数定义的不透明度 */
 }
 /* 鼠标移入显示nav内容详情页 */
-.site-category-list .nav-title>a:hover+.nav-title-list{
+.site-category-list .nav-title:hover .nav-title-list{
     display: block;
 }
 /* nav内容详情 */
+/* div */
 .nav-title-list {
     display: none;
     position: absolute;
     left: 234px;
+    width: 992px;
     top: 0;
     z-index: 24;
     height: 458px;
     border: 1px solid #e0e0e0;
+    /* background: #fff; */
     border-left: 0;
-    background: #fff;
     -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.18);
     box-shadow: 0 8px 16px rgba(0,0,0,.18);
 }
-
-
+/* ul */
+.nav-title-list .children-list {
+    width: 248px;
+    height: 456px;
+    background: #fff;
+    padding: 2px 0;
+    margin: 0;
+}
+/* li */
+.nav-title-list .children-list .children-list-item{
+    position: relative;
+    width: 265px;
+    height: 76px;
+    display: list-item;
+}
+.nav-title-list .children-list .children-list-item a{
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+    transition: all .2s;
+}
+.nav-title-list .children-list .children-list-item img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    float: left;
+}
+.nav-title-list .children-list .children-list-item .text{
+    float: left;
+    width: 172px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    transition: all .2s;
+}
+.nav-title-list .children-list .children-list-item a:hover .text{
+    color: #ff6700;
+}
 
 
 
