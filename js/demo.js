@@ -6,7 +6,7 @@ $(function(){
         // 手动切换后继续轮播
         pauseOnAction: false,
         // 显示左右按钮
-        directionNav: false 
+        directionNav: false
     });
 // banner部分 end
 // 轮播部分
@@ -39,7 +39,6 @@ $(function(){
 
 // 轮播部分 end
 // 计时器部分
-
 showLocalTime();
 var LocalTime = setInterval(showLocalTime, 1000)
 function showLocalTime(){
@@ -61,9 +60,5 @@ function showLocalTime(){
     $('#m').html(myminute);
     $('#s').html(mysecond);
 }
-
 // 计时器部分 end
-
-
-
 })
