@@ -1,0 +1,112 @@
+.fs-3 .fs-3-content .user {
+    height: 102px;
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+}
+.fs-3 .fs-3-content .news {
+    overflow: hidden;
+    height: 130px;
+    background-color: #fff;
+}
+.fs-3 .fs-3-content .service {
+    position: relative;
+    height: 238px;
+    overflow: hidden;
+}
+.fs-3 .fs-3-content .service .service-entry {
+    padding: 4px .5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.fs-3 .fs-3-content .service .service_list {   /*ul*/
+    padding-top: 5px;
+    height: 225px;
+}
+.fs-3 .fs-3-content .service .service_list span{
+    position: relative;
+}
+.fs-3 .fs-3-content .service .service_list .service-frame-on span::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    color: #e1251b;
+    background-color: #e1251b;
+}
+.fs-3 .fs-3-content .service .service_item {   /*li*/
+    float: left;
+    text-align: center;
+    width: 63px;
+    height: 55px;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.fs-3 .fs-3-content .service .service_item a{
+    display: inline-block;
+    color: #333;
+
+}
+.fs-3 .fs-3-content .service .service_item .service_ico {
+    height: 28px;
+    width: 28px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.fs-3 .fs-3-content .service .service_item img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fs-3 .fs-3-content .service .service_item img.service_ico_img_hover{
+    /* display: none; */
+    opacity: 0;
+    transition: all .5s;
+}
+.fs-3 .fs-3-content .service .service_item img:hover.service_ico_img_hover{
+    opacity: 1;
+}
+
+
+.fs-3 .fs-3-content .service .service-pop{
+    width: 190px;
+    height: 212px;
+    position: absolute;
+    padding: 10px 5px 5px;
+    box-sizing: border-box;
+    top: 240px;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.5s;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+.fs-3 .fs-3-content .service .service-pop .close {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    /* width: 100%; */
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.fs-3 .fs-3-content .service .service-pop .close:hover{
+    background-color: #e1251b;
+    color: #fff;
+}
+

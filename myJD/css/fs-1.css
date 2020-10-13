@@ -1,0 +1,86 @@
+
+.fs-1 .fs-menu {
+    margin-top: 10px;
+    height: 470px;
+    background-color: white;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+}
+.fs-1 .fs-menu li{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+    font-size: 14px;
+
+}
+.fs-1 .fs-menu li span{
+    margin: 0 2px;
+}
+.fs-1 .fs-menu li.menu-item-on{
+    background-color: #d9d9d9;
+}
+.fs-1 .fs-menu li a{
+    color: #333;
+}
+
+/* 选项卡内容区 */
+.fs-1 .menu-content{
+    position: absolute;
+    width: 998px;
+    /* height: 470px; */
+    min-height: 470px;
+    top: 10px;
+    left: 190px;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    z-index: 120;
+    display: none;
+}
+.fs-1 .menu-content .tabs-nav {
+    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+.fs-1 .menu-content .tabs-nav a{
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #333;
+    color:#fff;
+    margin-right: 10px;
+}
+.fs-1 .menu-content .tabs-nav a:hover{
+    background-color: #e1251b;
+    color: #fff !important;
+}
+.fs-1 .menu-content .tabs-nav a i{
+    margin-left: 5px;
+}
+.fs-1 .menu-content .cate-details {
+    padding: 10px 0 20px;
+    width: 750px;
+}
+.fs-1 .menu-content .cate-details dl {
+    position: relative;
+    height: 100%;
+}
+.fs-1 .menu-content .cate-details dt {
+    width: 80px;
+    text-align: right;
+    font-weight: bold;
+    word-spacing: normal;
+    float: left;
+}
+.fs-1 .menu-content .cate-details dd {
+    overflow: hidden;
+}
+.fs-1 .menu-content .cate-details a{
+    white-space: nowrap;
+    color: #333;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 3px 0;
+    padding: 0 7px;
+}

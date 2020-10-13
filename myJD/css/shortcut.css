@@ -1,0 +1,109 @@
+.active{
+    color: #e2231a !important;
+}
+.shortcut-w a{
+    color: #999;
+}
+.shortcut-w span{
+    color: #999;
+}
+.shortcut-w .position {
+    float: left;
+
+}
+.shortcut-w .position .map{
+    height: 30px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    cursor: pointer;
+    padding: 0 6px;
+    position: relative;
+}
+.shortcut-w .position .map:hover{
+    border-color: #ccc;
+    background-color: #fff;
+}
+.shortcut-w .position .map:hover span{
+    color: #e2231a;
+}
+.shortcut-w .nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.shortcut-w .nav li {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.shortcut-w .nav .spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #999;
+    margin: 11px 5px 0;
+}
+.shortcut-w .nav li .dt {
+    height: 30px;
+    padding: 0 7px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.shortcut-w .nav li:hover .dt-icon{
+    border-color: transparent #ccc;
+    background-color: #fff;
+}
+.shortcut-w .nav li a[href]:hover {
+    color: #e2231a;
+}
+.shortcut-w .nav .my-dropdown {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    line-height: 24px;
+    border-top: none;
+    display: none;
+    z-index: 999;
+}
+.shortcut-w .nav li:hover .my-dropdown{
+    display: block;
+    top: 30px;
+}
+.shortcut-w .nav .my-dropdown dl{
+    padding: 10px 0 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+.shortcut-w .nav .my-dropdown dd{
+    float: left;
+    white-space: nowrap;
+
+}
+.shortcut-w .nav .my-dropdown.my-jd {   /*我的京东*/
+    width: 280px;
+    left: 0;
+}
+.shortcut-w .nav .my-dropdown.my-jd dd{
+    width: 126px;
+
+}
+.shortcut-w .nav .my-dropdown.my-company{   /*企业采购*/
+    width: 140px;
+    left: 0;
+}
+.shortcut-w .nav .my-dropdown.my-company dd{
+    width: 56px;
+}
+.shortcut-w .nav .my-dropdown.my-serve {   /*客户服务*/
+    width: 170px;
+    right: 0;
+}
+.shortcut-w .nav .my-dropdown.my-serve dd {
+    width: 70px;
+}
+.shortcut-w .nav .my-dropdown.my-app{
+    top: 30px;
+    width: 355px;
+    right: -84px;
+}
+.shortcut-w .nav .my-dropdown.my-app dd{
+    width: 85px;
+
+}

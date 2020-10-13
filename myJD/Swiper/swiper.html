@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="swiper.css">
+    <style>
+        .demo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item1 {
+            background-color: palevioletred;
+        }
+
+        .item2 {
+            background-color: coral;
+        }
+
+        .item3 {
+            background-color: seagreen;
+        }
+
+        .item4 {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 一、封装轮播图(高内聚、低耦合)
+    把相同的部分拿到封装的方法中、不相同的地方拿来作为参数传递
+    1、轮播图的内容不同(图片、多张图片、dom元素)、统一处理成dom元素列表  list
+    2、轮播图大小  width height
+    3、动画效果不一样  type fade/animate
+    4、是否显示左右按钮  showChangeBtn
+    5、自动轮播的时间  autoTime
+    6、是否显示小圆点  showSpotBtn
+    7、是否自动轮播  isAuto -->
+
+    <div class="wrapper">
+        <div class="img-list">
+            <div class="item item1">item1</div>
+            <div class="item item2">item2</div>
+            <div class="item item3">item3</div>
+        </div>
+    </div>
+    <div class="demo">
+        <div class="list">
+            <div class="item item1">item1</div>
+            <div class="item item2">item2</div>
+            <div class="item item3">item3</div>
+            <div class="item item4">item4</div>
+        </div>
+    </div>
+    <!-- <script src="jquery-3.4.0.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="swiper.js"></script>
+    <script>
+        $('.wrapper').swiper({
+            list: $('.img-list .item'),   //轮播图列表
+            width: 500,   //轮播图宽度
+            height: 350,   //轮播图高度
+            type: 'fade',  //轮播图动画效果
+            showChangeBtn: true,   //是否显示左右与按钮
+            autoTime: 1500,   //自动轮播时间
+            showSpotBtn: true,   //是否显示小圆点
+            isAuto: true,   //是否自动轮播
+        })
+
+    $('.demo').swiper({
+        list : $('.list .item'),   //轮播图列表
+        width : 800,   //轮播图宽度
+        height : 500,   //轮播图高度
+        type : 'animate',  //轮播图动画效果
+        showChangeBtn : true,   //是否显示左右与按钮
+        autoTime : 1500,   //自动轮播时间
+        showSpotBtn : true,   //是否显示小圆点
+        isAuto : true,   //是否自动轮播
+    })
+    </script>
+</body>
+
+</html>

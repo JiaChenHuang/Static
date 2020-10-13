@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1822925 */
+    src: url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.eot');
+    src: url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1822925_vzes0kzqk7k.svg#iconfont') format('svg');
+  }
+.iconfont {
+    font-family: 'iconfont';
+    font-style: normal;
+}
+body,html{   /*设置统一样式*/
+    /* font-size: 12px; */
+    width: auto;
+    min-width: 1190px;
+    background-color: #f4f4f4;
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+
+}
+.clear::after{   /*清除浮动*/
+    content: '';
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.w{   /*固定宽度切区中*/
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.shortcut {   /*顶部导航*/
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #eee;
+    background-color: #e3e4e5;
+    box-sizing: border-box;
+}
+
+.header {   /*头部LOGO*/
+    height: 140px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* display: flex; */
+}
+
+.fs {   /*主体部分*/
+    height: 480px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+
+}
+
+.seckill {   /*秒杀部分*/
+    height: 260px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
