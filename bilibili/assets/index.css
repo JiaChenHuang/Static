@@ -1,0 +1,317 @@
+body,html{
+  height: 100%;
+}
+#app{
+  height: 100%;
+  overflow: scroll;
+}
+.header {
+  /*header区域*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding-bottom: 15px;
+  z-index: 3;
+}
+
+.header .logo {
+  /* LOGO区域 */
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.header .search-input {
+  /* 搜索框区域 */
+  display: flex;
+  align-items: center;
+  width: 132px;
+  height: 24px;
+  font-size: 10px;
+  color: #999;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header .search-input svg {
+  /*搜索按钮*/
+  margin: 0 5px 0 10px;
+}
+
+.header .search-input span {
+  /*搜索文字*/
+  width: 92px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header .avatar svg {
+  /*用户头像区域*/
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header .download-app {
+  /*下载按钮*/
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #fb7299;
+  padding: 0 10px;
+  border-radius: 4px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.nav-box {
+  /* Nav盒子 */
+  position: fixed;
+  top: 54px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.nav-box .nav-list {
+  /* 整个滚动条 */
+  white-space: nowrap;
+  overflow-x: scroll;
+  width: 85%;
+  padding-left: 24px;
+}
+
+.nav-box .nav-list::-webkit-scrollbar {
+  /* 清楚nav部分的滚动条 */
+  display: none;
+}
+
+.nav-box .nav {
+  /* 每一个item */
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  color: #757575;
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-box .nav.active {
+  /*nav选中时的状态*/
+  border-color: #fb7299;
+  color: #fb7299;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-box .down {
+  /* 导航下拉展开按钮 */
+  position: absolute;
+  top: -3px;
+  right: 13px;
+}
+
+.hide-nav-box {
+  /* 导航下拉面板 */
+  position: fixed;
+  top: 54px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  padding-bottom: 20px;
+  z-index: 2;
+  transition: top 0.5s ease-in-out;
+}
+
+.hide-nav-box.hide {
+  /* display: none; */
+  top: -117px;
+  transition: top 0.5s ease-in-out;
+}
+
+.hide-nav-box .nav {
+  /* 导航下拉每个item */
+  display: inline-block;
+  width: 32px;
+  margin: 10px 14px 0 14px;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #757575;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.hide-nav-box .nav.big {
+  /* 处理item字数大于两个字符 */
+  width: 46px;
+  margin: 0 7px;
+}
+
+.hide-nav-box .nav.active {
+  /* 设置下拉item选中状态 */
+  border-color: #fb7299;
+  color: #fb7299;
+}
+
+.hide-nav-box .up {
+  /* 设置收起按钮样式 */
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner-box {
+  /* banner盒子区域 */
+  position: relative;
+  top: 90px;
+  background-color: lightcyan;
+  width: 350px;
+  height: 110px;
+  overflow: hidden;
+  margin: 0 auto;
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  border-radius: 6px;
+}
+
+.banner-box .banner-list {
+  /*banner图片盒子、ul*/
+  position: absolute;
+  width: calc(350px * 4);
+  left: 0;
+  transition: left 0.3s ease;
+}
+
+.banner-box .banner {
+  /* 每一张banner图片的盒子、li */
+  width: 350px;
+  height: 110px;
+  float: left;
+}
+
+.banner-box .banner .poster {
+  /* 每一张banner图片 */
+  width: 100%;
+  height: 100%;
+}
+
+.banner-box .index-list {
+  /* 小圆点盒子 */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 3px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10px;
+}
+
+.banner-box .index-list .index {
+  /* 每一个小圆点样式 */
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.banner-box .index-list .index.active {
+  /* 当前显示的第几张图片对应的小圆点样式 */
+  background-color: #fb7299;
+}
+
+.video-box {
+  padding: 100px 6px 0 6px;
+}
+
+.video-box .video-list {
+  overflow: hidden;
+}
+
+.video-box .video {
+  width: 50%;
+  float: left;
+}
+
+.video-box .poster {
+  position: relative;
+  height: 106px;
+  margin: 0 6px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.video-box .poster img {
+  /* 设置图片大小 */
+  width: 100%;
+  height: 100%;
+}
+.video-box .poster .info{
+  /* 底部信息 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  padding: 8px 10px 3px 10px;
+  color: #fff;
+  font-size: 12px;
+  background-image: linear-gradient(rgba(33,33,33,0),rgba(33,33,33,1));
+}
+.video-box .poster .info>div{
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.video-box .poster .info svg{
+  /* 播放和评论按钮 */
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  margin-right: 3px;
+}
+.video-box  .title{
+  font-size: 13px;
+  margin: 6px 6px 10px 6px;
+  line-height: 20px;
+  height: 38px;
+  /* 多行文本溢出打点 */
+  overflow: hidden;
+  -webkit-line-clamp: 2;  /* 设置最多显示几行文本 */
+  display: -webkit-box;  /* 设置盒子为伸缩盒 */
+  -webkit-box-orient: vertical;  /* 设置伸缩盒内子元素排列方式为vertical */
+  /* 单行文本溢出打点 */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+}
+/* footer区域 */
+.footer{
+  text-align: center;
+  margin: 40px 0;
+}
+.footer p{
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
