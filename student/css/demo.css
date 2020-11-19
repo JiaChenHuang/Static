@@ -1,0 +1,216 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: "microsoft yahei";
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* 列表选择功能 */
+.active {
+	background-color: #ddd !important;
+	color: #354457 !important;
+}
+
+/* 设置按钮样式 */
+.btn {
+	outline: none;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* 左侧logo区域 */
+.header {
+	height: 70px;
+	line-height: 70px;
+	background-color: #354457;
+}
+
+.header .logo {
+	padding-left: 20px;
+	color: #b3bcc5;
+	font-size: 14px;
+}
+
+.header .logo img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	/* 设置行级块元素对齐方式 */
+}
+
+/* 学生列表区域 */
+.left-menu {
+	width: 200px;
+	height: calc(100% - 70px);
+	/* calc()用于做不同单位之间的换算 */
+	background-color: #4d5e70;
+	float: left;
+	overflow: hidden;
+}
+
+.left-menu dl dt,
+.left-menu dl dd {
+	height: 40px;
+	line-height: 40px;
+	color: #b3bcc5;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.left-menu dl dd {
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.left-menu dl dd:hover {
+	color: #354457;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 主内容区域 */
+.right-content {
+	width: calc(100% - 200px);
+	height: calc(100% - 70px);
+	float: left;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+}
+
+.right-content>div {
+	display: none;
+}
+
+.right-content>div.active {
+	display: block;
+	background-color: #eee !important;
+}
+
+/* 学生列表区域 */
+.student-list {
+	/* display: none; */
+	width: 100%;
+	position: absolute;
+	/* 相对于元素的父级定位元素定位 */
+	left: 0;
+	top: 0;
+	background-color: #eee;
+}
+
+.student-list table {
+	width: 100%;
+	text-align: center;
+
+}
+
+.student-list table thead {
+	background-color: #e3e8ee;
+	color: #000;
+	height: 34px;
+	line-height: 34px;
+}
+
+.student-list table tbody {
+	background-color: #fff;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.student-list table .btn.edit {
+	background-color: #5cb85c;
+}
+
+.student-list table .btn.del {
+	background-color: #d9534f;
+}
+
+.student-list .turn-page {
+	text-align: center;
+}
+
+.student-list .turn-page .btn {
+	background-color: #fff;
+	color: #354457;
+	margin: 5px;
+	display: none;
+}
+
+/* 新增学生区域 */
+.student-add {
+	/* display: none; */
+
+}
+
+form {
+	width: 400px;
+	margin: 50px auto;
+
+}
+
+form div {
+	margin: 10px 0;
+}
+
+form label {
+	width: 120px;
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+}
+
+/* 单独设置性别中的label */
+form label.sex {
+	width: auto;
+}
+
+/* 新增学生提交和重置按钮样式 */
+form .btn {
+	padding: 5px 20px;
+	color: #334457;
+	margin: 0 5px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+
+/* 编辑表单区域 */
+
+.modal {
+	position: fixed;
+	display: none;
+	/* width: 100%; */
+	/* height: 100%; */
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-content{
+	width: 500px;
+	height: 360px;
+	background-color: #fff;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -210px;
+	margin-left: -250px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 12px #ccc;
+}
+.modal .modal-content form{
+	margin: 30px auto;
+}
+.modal .modal-content form #student-edit-submit{
+	padding: 5px 64px;
+	margin: 0;
+}

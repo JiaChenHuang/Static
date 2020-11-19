@@ -1,0 +1,46 @@
+0、为页面添加事件:function bindEvent() {}
+
+1、获取所有的兄弟节点:function getSiblings(node) {}
+
+2、左右两边切换样式功能:function changeStyle(node) {}
+
+3、获取表单数据:function getFormData(form) {}
+
+4、编辑表单的回填,接受的参数是学生的信息:function renderForm(data) {}
+
+5、数据交互函数:function transferData(url, data, success) {}
+
+6、获取学生列表数据:function getTableData() {}
+
+7、渲染表格数据:function renderTable(data) {}
+
+8、向后端存储数据
+function saveData(url, param) {
+    var result = null;
+    var xhr = null;
+    if (window.XMLHttpRequest) {
+        xhr = new XMLHttpRequest();
+    } else {
+        xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    if (typeof param == 'string') {
+        xhr.open('GET', url + '?' + param, false);
+    } else if (typeof param == 'object') {
+        var str = "";
+        for (var prop in param) {
+            str += prop + '=' + param[prop] + '&';
+        }
+        xhr.open('GET', url + '?' + str, false);
+    } else {
+        xhr.open('GET', url + '?' + param.toString(), false);
+    }
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                result = JSON.parse(xhr.responseText);
+            }
+        }
+    }
+    xhr.send();
+    return result;
+}
